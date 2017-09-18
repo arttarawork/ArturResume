@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Font sizes: 10, 11, or 12
+% Paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape
+% Font families: sans or roman
+\documentclass[12pt,letterpaper,sans]{moderncv} 
+
+\moderncvstyle{classic} % CV theme: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[tmargin=.5in, bmargin=.5in, rmargin=.75in, lmargin=.75in]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Artur} % Your first name
+\familyname{Tarasenko} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Resume}
+\address{}{US Citizen}
+\email{atarasenko3@gatech.edu}
+\mobile{+1 (678) 549 9345}
+\extrainfo{github.com/arttarawork\\Graduating May 2018}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+%\cventry{2015 - 2018}{Bachelor of Computer Science}{Georgia Institute of Technology}{}{\textit{GPA: 3.38}}{
+\cventry{2015 - 2018 (expected)}{Bachelor of Computer Science}{Georgia Institute of Technology}{}{}{
+\begin{itemize}
+\item Major GPA: 3.50, Overall GPA: 3.38
+\item Honors Program
+\item Specializations in Theory and Intelligence
+\item Relevant Coursework
+\begin{itemize}
+\item Advanced Algorithms
+\item Natural Language Processing (at Hong Kong University of Science and Technology)
+\item Introduction to Artificial Intelligence (at Hong Kong University of Science and Technology)
+\item Automata and Complexity
+\end{itemize}
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+
+%\cventry{Summer 2017}{Techstar Intern}{\textsc{Ultimate Software}}{Weston, Florida}{}{
+\cventry{Summer 2017}{Ultimate Software}{Intern}{}{}{
+\begin{itemize}
+\item Developed payroll tax management suite
+\begin{itemize}
+\item Managed, calculated, and filed payroll tax for clients with our product
+\item Operated for all layers of federal, state, and local tax
+\item Filed electronically, or generated printable copies when tax agency didn't support e-filing
+\end{itemize}
+\item Worked alongside full-time developers in Kanban Agile environment
+\begin{itemize}
+\item Code in production
+\item Used Visual Studio 2017, TeamCity, JIRA in workflow
+\end{itemize}
+\item Developed in full-stack with \texttt{C\#} for frontend and tax logic and a SQL backend
+%\begin{itemize}
+%\item \texttt{C\#} for frontend and tax logic
+%\item SQL backend
+%\end{itemize}
+\end{itemize}}
+
+%\cventry{Summer 2016}{Intern}{\textsc{The Home Depot}}{Marietta, Georgia}{}{
+\cventry{Summer 2016}{The Home Depot}{Intern}{}{}{
+\begin{itemize}
+\item Developed supplier onboarding tool
+\begin{itemize}
+\item Replaced costly manual faxing between attorneys with Angular webapp
+\item Saved over \$100,000 per year
+\item Used currently with every single supplier for The Home Depot
+\end{itemize}
+\item Replaced COBOL finance tool with Angular webapp
+\begin{itemize}
+\item Decreased human error through automation 
+\item Combined several separate tools with microservices architecture
+\end{itemize}
+\item Worked alongside full-time developers in XP environment
+\begin{itemize}
+\item Code in production
+\item Tested continuously with strict test-driven development
+\end{itemize}
+\item Developed in full-stack with AngularJS frontend, Java middleware, and DB2 backend
+%\begin{itemize}
+%\item AngularJS frontend
+%\item Java and DB2 backend
+%\end{itemize}
+\end{itemize}}
+
+%\cventry{2014 - 2015}{Intern}{\textsc{ROKA/Blind Fox Studio}}{Marietta, Georgia}{}{
+%\begin{itemize}
+%\item Helped build games during Ludum Dares (hackathons for games)
+%\item HackGT originated startup
+%\end{itemize}
+%}
+
+%\cventry{Spring 2014}{Intern}{\textsc{NCR Corp}}{Duluth, Georgia}{}{
+%\begin{itemize}
+%\item Studied proprietary ATM systems at Quality Assurance department
+%\end{itemize}
+%}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Programming}{\texttt{C\#}, Java, Python, ASP.NET, AngularJS, SQL, C, Git}
+\cvitem{Other}{Autodesk Inventor, AutoCAD, \LaTeX, Russian (conversationally fluent)}
+\cvitem{Hobbies}{Screenwriting, Filmmaking, Weightlifting, Cooking}
+
+
+\end{document}childish gambino concert meme
