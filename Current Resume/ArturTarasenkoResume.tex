@@ -29,16 +29,15 @@
 % Font families: sans or roman
 \documentclass[12pt,letterpaper,sans]{moderncv} 
 
-\moderncvstyle{classic} % CV theme: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking} % CV theme: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black} % CV color: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 \usepackage[tmargin=.4in, bmargin=.4in, rmargin=.75in, lmargin=.75in]{geometry} % Reduce document margins
+\setlength{\footskip}{149.60005pt} 
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
-
+%\setlength{\makecvheadnamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -48,9 +47,10 @@
 \familyname{Tarasenko} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Graduating May 2018, Seeking Full-time Position}
-\address{}{US Citizen}
-\email{atarasenko3@gatech.edu}
+\title{Software Engineer}
+\address{US Citizen}{ }
+\fax{linkedin.com/in/arturtarasenko/}
+\email{arttarawork@gmail.com}
 \mobile{+1 (678) 549 9345}
 \extrainfo{github.com/arttarawork}
 
@@ -85,8 +85,86 @@
 %----------------------------------------------------------------------------------------
 %	CURRICULUM VITAE
 %----------------------------------------------------------------------------------------
-
 \makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+%\cventry{March 2021 - January 2022}{Software Engineer}{\textsc{Itential, Inc.}}{Atlanta, GA}{}{
+\cventry{March 2022 - March 2024}{Software Engineer III}{Google}{}{}{
+\begin{itemize}
+\item Developed Bazel-based language-agnostic database schema minimization tool for unit tests
+\begin{itemize}
+\item Reduced unit test runtime by up to 34\%, dropped test flake rate by up to 93\%
+\item Led multiple seminars across Google Play Analytics org and wrote documentation on tool usage
+\item Solved common testing issue, used by teams outside of Google Play less than a month after release
+\item Added to company-wide utils for F1, Google's in-house distributed SQL database
+\end{itemize}
+\item Trained in interviewing candidates for Google's onsite interviews
+\item Mentored junior engineers through engineering and team communication challenges
+\item Constructed end-to-end testing for data analytics pipelines, reducing dev time
+\begin{itemize}
+\item Mocked service endpoints and GCP Spanner databases to run test hermetically
+\end{itemize}
+\item Created data-diffing tool for filtered data to ensure privacy compliance
+\begin{itemize}
+\item Prepared developers for EU Digital Markets Act enforcement
+\end{itemize}
+\end{itemize}}
+
+\cventry{March 2021 - January 2022}{Software Engineer}{Itential}{}{}{
+\begin{itemize}
+\item Worked within R\&D team to build Single Sign-On from our new cloud offering to our learning portal
+\begin{itemize}
+\item Developed AWS Lambda service to verify user stored credentials against Keycloak IAM instance
+\item Created additional Lambda service to generate temporary sign-in link to redirect to our learning portal
+\item Orchestrated the two services to create an API endpoint with AWS API Gateway
+%\item Led developers in being first to use these AWS tools and providing documentation on their usage
+\end{itemize}
+\item Contributed new features and improvements towards our second-gen lightweight version of extensions
+\begin{itemize}
+\item Enabled users to use SSL options for accessing their APIs
+\item Improved readability of API import errors, where previously errors wouldn't even mention line numbers
+\end{itemize}
+\end{itemize}}
+
+\cventry{June 2018 - March 2021}{Software Engineer}{Microsoft}{}{}{
+\begin{itemize}
+\item Built sophisticated linter to guide best-practices while developing with Office.js
+\begin{itemize}
+\item Dynamically constructs call graph of file to accommodate complex code structures
+\item Utilized Typescript-ESLint for ease of integration for other developers
+\item Leveraged Typescript AST format to call out improper function calls
+\end{itemize}
+\item Developed tool to convert tests written in one API format to another
+\begin{itemize}
+%\item Utilized Typescript Compiler API to parse through tests in old format
+\item Replaced code statements with equivalent new format statements based on syntax patterns
+\item Overhauled thousands of tests written with varied styles over several years to new format
+\end{itemize}
+\item Created automated performance testing suite for developers to track performance of Office.js
+\begin{itemize}
+\item Leveraged Mocha, Node.js, and xperf to track CPU and memory usage, disk IO, and time
+\item Generated final report file that can be plugged into PowerBI for analysis
+\item Developed for extensibility, so others can write their own scenarios for testing
+\end{itemize}
+\item Collaborated with Office Native Runtime team to create testing tools and resolve C++ bugs
+\item Instrumented Office.js with telemetry to track performance gains
+\begin{itemize}
+\item Displayed data with real-time report in Power BI
+\end{itemize}
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{}{Java, Python, GCP, Javascript, Typescript, Node.js, MongoDB, AWS, NoSQL, React, React Native, Mocha, Bazel, Serverless, ESLint, Typescript-ESLint, \texttt{C\#}, Python, ASP.NET, AngularJS, SQL, C, Git, Linux, Autodesk Inventor, AutoCAD, LaTeX, Russian}
+
+\pagebreak
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -95,12 +173,13 @@
 \section{Education}
 
 %\cventry{2015 - 2018}{Bachelor of Computer Science}{Georgia Institute of Technology}{}{\textit{GPA: 3.38}}{
-\cventry{2015 - 2018 (expected)}{Bachelor of Computer Science}{Georgia Institute of Technology}{}{}{
+\cventry{2015 - 2018}{Bachelor of Computer Science}{Georgia Institute of Technology}{}{}{
 \begin{itemize}
-\item Major GPA: 3.32, Overall GPA: 3.16
-\item Honors Program
+\item Major GPA: 3.12, Overall GPA: 3.09
 \item Specializations in Theory and Intelligence
+\item Honors Program
 \item Study Abroad at Hong Kong University of Science and Technology
+\item Graduated one year early
 %\item Won Most Scalable and Ready for Market Hack at HackGT
 %\item Relevant Coursework
 %\begin{itemize}
@@ -111,11 +190,28 @@
 %\end{itemize}
 \end{itemize}}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+% \section{Personal Projects}
 
-\section{Professional Experience}
+% \cventry{April 2017}{TweetLike}{Final project in Fundamentals of Artificial Intelligence}{}{}{
+%     \begin{itemize}
+%         \item Generated tweets to sound like any Twitter user with Markov chain library and Twitter API
+%     \end{itemize}
+% }
+
+% \cventry{January 2017}{Emojipastafy}{Uncommon Hacks 2017}{}{}{
+%     \begin{itemize}
+%         \item Utilized Python NLP library to intelligently add emojis to input text to make "emojipastas"
+%     \end{itemize}
+% }
+
+% \cventry{October 2016}{BigBackUp}{HackGT 2016}{}{}{
+%     \begin{itemize}
+%         \item Leveraged Youtube's unlimited uploads by converting files into encrypted video and uploading
+%         \item Won Most Scalable and Ready for Market Hack
+%     \end{itemize}
+% }
+
+\section{Internships}
 
 %\cventry{Summer 2017}{Techstar Intern}{\textsc{Ultimate Software}}{Weston, Florida}{}{
 \cventry{Summer 2017}{Ultimate Software}{Software Engineering Intern}{}{}{
@@ -176,37 +272,5 @@
 %\item Studied proprietary ATM systems at Quality Assurance department
 %\end{itemize}
 %}
-
-\section{Personal Projects}
-
-\cventry{April 2017}{TweetLike}{Final project in Fundamentals of Artificial Intelligence}{}{}{
-    \begin{itemize}
-        \item Generated tweets to sound like any Twitter user with Markov chain library and Twitter API
-    \end{itemize}
-}
-
-\cventry{January 2017}{Emojipastafy}{Uncommon Hacks 2017}{}{}{
-    \begin{itemize}
-        \item Utilized Python NLP library to intelligently add emojis to input text to make "emojipastas"
-    \end{itemize}
-}
-
-\cventry{October 2016}{BigBackUp}{HackGT 2016}{}{}{
-    \begin{itemize}
-        \item Leveraged Youtube's unlimited uploads by converting files into encrypted video and uploading
-        \item Won Most Scalable and Ready for Market Hack
-    \end{itemize}
-}
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-
-\cvitem{Programming}{\texttt{C\#}, Java, Python, ASP.NET, AngularJS, SQL, C, Git, Linux}
-\cvitem{Other}{Autodesk Inventor, AutoCAD, LaTeX, Russian (conversationally fluent)}
-\cvitem{Hobbies}{Screenwriting, Weightlifting, Cooking}
-
 
 \end{document}

@@ -83,7 +83,7 @@
   \savebox{\maketitletempbox}{}%
   \setlength{\maketitleboxwidth}{0pt}}
 \renewcommand*{\maketitle}{%
-  \setlength{\maketitlewidth}{0.8\textwidth}%
+  \setlength{\maketitlewidth}{1\textwidth}%
   \hfil%
   \parbox{\maketitlewidth}{%
     \centering%
@@ -92,18 +92,19 @@
     \ifthenelse{\isundefined{\@title}}{}{\titlestyle{~|~\@title}}\\%
     % detailed information
     \addressfont\color{color2}%
-    \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\addresssymbol\@addressstreet}%
-      \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~--~]{\@addresscity}}\flushmaketitle\@firstmaketitleelementtrue\\}% if \addresstreet is defined, \addresscity will always be defined but could be empty
+    \ifthenelse{\isundefined{\@addresscity}}{}{\addtomaketitle{\addresssymbol\@addresscity}%
+      \ifthenelse{\equal{\@addresscity}{}}{}{\addtomaketitle[~~]{\@addresscity}}\flushmaketitle\@firstmaketitleelementtrue\\}% if \addresstreet is defined, \addresscity will always be defined but could be empty
+    \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\@addressstreet}}%
+    \ifthenelse{\isundefined{\@fax}}{}{\addtomaketitle{\@fax}}%
+    \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
     \ifthenelse{\isundefined{\@mobile}}{}{\addtomaketitle{\mobilesymbol\@mobile}}%
     \ifthenelse{\isundefined{\@phone}}{}{\addtomaketitle{\phonesymbol\@phone}}%
-    \ifthenelse{\isundefined{\@fax}}{}{\addtomaketitle{\faxsymbol\@fax}}%
     \ifthenelse{\isundefined{\@email}}{}{\addtomaketitle{\emailsymbol\emaillink{\@email}}}%
         \ifthenelse{\isundefined{\@homepage}}{}{%
 	\ifthenelse{\equal{\@homepagetitle}{}}% \homepagetitle could be empty
 	{\addtomaketitle{\homepagesymbol\httplink{\@homepage}}}%
 	{\addtomaketitle{\homepagesymbol\httplink[\@homepagetitle]{\@homepage}}}}%
-    \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
-    \flushmaketitle}\\[2.5em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
+    \flushmaketitle}\\[0em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
 
 
 %-------------------------------------------------------------------------------
