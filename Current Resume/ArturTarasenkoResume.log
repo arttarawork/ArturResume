@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.11)  14 MAR 2024 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.11)  14 MAR 2024 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,15 +486,15 @@ Package rerunfilecheck Info: File `ArturTarasenkoResume.out' has not changed.
 (rerunfilecheck)             Checksum: 6AAFC0D280EB626256405B5F006D0AE0;420.
  ) 
 Here is how much of TeX's memory you used:
- 12980 strings out of 474115
- 210141 string characters out of 5747690
+ 12982 strings out of 474115
+ 210163 string characters out of 5747690
  1951190 words of memory out of 5000000
  35079 multiletter control sequences out of 15000+600000
- 605471 words of font info for 88 fonts, out of 8000000 for 9000
+ 605587 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,6n,93p,1071b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb>
-Output written on ArturTarasenkoResume.pdf (2 pages, 211749 bytes).
+Output written on ArturTarasenkoResume.pdf (2 pages, 211752 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
